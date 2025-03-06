@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Página Principal</title>
+  <!-- Vincular archivo CSS externo (opcional) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="buceo.html">Buceo</a></li>
+        <li><a href="rural.html">Rural</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bienvenido a nuestra página principal</h1>
+    <p>
+      Explora nuestras opciones de turismo: buceo, turismo rural y mindfulness.
+    </p>
+    <p>
+      Haz clic en el enlace de cada sección para saber más.
+    </p>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados &copy; 2025</p>
+  </footer>
+</body>
+</html>
