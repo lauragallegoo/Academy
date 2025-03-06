@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Turismo Rural</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="buceo.html">Buceo</a></li>
+        <li><a href="rural.html">Rural</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Turismo Rural</h1>
+    <p>
+      Aquí puedes describir tus opciones de turismo rural: fincas, estancias, 
+      paseos, actividades en la naturaleza y consejos para disfrutar la vida de campo.
+    </p>
+    <p>
+      Comparte recomendaciones de hospedaje, comida típica y guías de viaje para rutas rurales.
+    </p>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados &copy; 2025</p>
+  </footer>
+</body>
+</html>
