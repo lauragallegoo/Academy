@@ -1,35 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Página Principal</title>
-  <!-- Vincular archivo CSS externo (opcional) -->
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Hola, somos MBR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuentes de ejemplo (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" 
+    rel="stylesheet"
+  >
+  <style>
+    /* === RESET BÁSICO === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F7F3EE;
+      color: #3B2D2D;
+      line-height: 1.5;
+    }
+
+    /* === ENCABEZADO PRINCIPAL / HERO === */
+    header {
+      min-height: 100vh; /* Ocupa todo el alto de la ventana */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      background: #FDFBF8; /* Un tono más claro */
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #3B2D2D;
+    }
+
+    header span {
+      color: #A46B41; /* Toque marrón/terracota para resaltar la palabra “MBR” */
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #4C3D3D;
+    }
+
+    header a.boton {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: #FFF;
+      background-color: #A46B41;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    header a.boton:hover {
+      background-color: #8A5733; /* Más oscuro al hacer hover */
+    }
+
+    /* === SECCIÓN GALERÍA / IMÁGENES === */
+    section#galeria {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section#galeria h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #3B2D2D;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    /* === SECCIÓN CONTACTO (simple ejemplo) === */
+    section#contacto {
+      background: #EEE7DF;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section#contacto h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #3B2D2D;
+    }
+
+    section#contacto p {
+      margin-bottom: 2rem;
+      color: #4C3D3D;
+    }
+
+    .contacto-boton {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: #FFF;
+      background-color: #A46B41;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .contacto-boton:hover {
+      background-color: #8A5733;
+    }
+
+    /* === PIE DE PÁGINA === */
+    footer {
+      background: #3B2D2D;
+      color: #FFF;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Sección Hero -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="buceo.html">Buceo</a></li>
-        <li><a href="rural.html">Rural</a></li>
-        <li><a href="mindfulness.html">Mindfulness</a></li>
-      </ul>
-    </nav>
+    <h1>Hola, somos <span>MBR</span></h1>
+    <p>Creo que la brevedad es crucial. Mis diseños digitales e impresos se basan en el minimalismo y la elegancia.</p>
+    <a class="boton" href="#contacto">Contrátame</a>
   </header>
 
-  <main>
-    <h1>Bienvenido a nuestra página principal</h1>
-    <p>
-      Explora nuestras opciones de turismo: buceo, turismo rural y mindfulness.
-    </p>
-    <p>
-      Haz clic en el enlace de cada sección para saber más.
-    </p>
-  </main>
+  <!-- Galería de imágenes o sección de proyectos -->
+  <section id="galeria">
+    <h2>Mis Proyectos</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+1" alt="Proyecto 1">
+      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+2" alt="Proyecto 2">
+      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+3" alt="Proyecto 3">
+      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+4" alt="Proyecto 4">
+    </div>
+  </section>
 
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>¿Listo para trabajar juntos?</h2>
+    <p>Ponte en contacto y platiquemos sobre tu proyecto.</p>
+    <a class="contacto-boton" href="mailto:tu_correo@ejemplo.com">Escríbeme</a>
+  </section>
+
+  <!-- Pie de página -->
   <footer>
-    <p>Todos los derechos reservados &copy; 2025</p>
+    <p>&copy; 2025 MBR - Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
