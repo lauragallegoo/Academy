@@ -11,32 +11,31 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" 
     rel="stylesheet"
   >
+
   <style>
-    /* === RESET BÁSICO === */
+    /* ========= RESET BÁSICO ========= */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #F7F3EE;
-      color: #3B2D2D;
+      background-color: #FCF9F4; /* color de fondo */
+      color: #3B2D2D; /* texto en marrón suave */
       line-height: 1.5;
     }
 
-    /* === ENCABEZADO PRINCIPAL / HERO === */
+    /* ========= ENCABEZADO / HERO ========= */
     header {
-      min-height: 100vh; /* Ocupa todo el alto de la ventana */
+      min-height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       padding: 2rem;
-      background: #FDFBF8; /* Un tono más claro */
+      background: #FDFBF8; /* un tono claro */
     }
-
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
@@ -44,24 +43,17 @@
       margin-bottom: 1rem;
       color: #3B2D2D;
     }
-
-    header span {
-      color: #A46B41; /* Toque marrón/terracota para resaltar la palabra “MBR” */
-    }
-
     header p {
       font-size: 1.2rem;
       max-width: 600px;
       margin-bottom: 2rem;
       color: #4C3D3D;
     }
-
     header a.boton {
       display: inline-block;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
       font-weight: 700;
-      font-family: 'Playfair Display', serif;
       color: #FFF;
       background-color: #A46B41;
       border: none;
@@ -69,18 +61,81 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
-
     header a.boton:hover {
-      background-color: #8A5733; /* Más oscuro al hacer hover */
+      background-color: #8A5733;
     }
 
-    /* === SECCIÓN GALERÍA / IMÁGENES === */
+    /* ========= SECCIÓN: LO QUE OFRECEMOS ========= */
+    .section-ofertas {
+      max-width: 1200px;
+      margin: 2rem auto;
+      text-align: center;
+      padding: 1rem;
+    }
+    .section-ofertas h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #3B2D2D;
+    }
+    .section-ofertas p {
+      max-width: 600px;
+      margin: 0.5rem auto 2rem auto;
+      color: #4C3D3D;
+    }
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .servicio {
+      max-width: 250px;
+      text-align: center;
+    }
+    /* Contenedor para el arco en la imagen */
+    .imagen-arco {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 50% 50% 0 0; /* Arco arriba */
+      margin: 0 auto 1rem auto;
+    }
+    .imagen-arco img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .servicio h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #3B2D2D;
+    }
+    .servicio .desc {
+      margin-bottom: 1rem;
+      color: #4C3D3D;
+    }
+    /* Enlace a subpáginas */
+    .servicio a {
+      display: inline-block;
+      text-decoration: none;
+      color: #A46B41;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+    .servicio a:hover {
+      border-color: #A46B41;
+    }
+
+    /* ========= SECCIÓN GALERÍA ========= */
     section#galeria {
       padding: 2rem 1rem;
       max-width: 1200px;
       margin: 0 auto;
     }
-
     section#galeria h2 {
       text-align: center;
       font-family: 'Playfair Display', serif;
@@ -88,13 +143,11 @@
       margin-bottom: 1.5rem;
       color: #3B2D2D;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
-
     .grid img {
       width: 100%;
       height: auto;
@@ -102,31 +155,27 @@
       object-fit: cover;
     }
 
-    /* === SECCIÓN CONTACTO (simple ejemplo) === */
+    /* ========= SECCIÓN CONTACTO ========= */
     section#contacto {
       background: #EEE7DF;
       padding: 2rem 1rem;
       text-align: center;
     }
-
     section#contacto h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #3B2D2D;
     }
-
     section#contacto p {
       margin-bottom: 2rem;
       color: #4C3D3D;
     }
-
     .contacto-boton {
       display: inline-block;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
       font-weight: 700;
-      font-family: 'Playfair Display', serif;
       color: #FFF;
       background-color: #A46B41;
       border: none;
@@ -134,51 +183,42 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
-
     .contacto-boton:hover {
       background-color: #8A5733;
     }
 
-    /* === PIE DE PÁGINA === */
+    /* ========= PIE DE PÁGINA ========= */
     footer {
       background: #3B2D2D;
       color: #FFF;
       text-align: center;
       padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- Sección Hero -->
+  <!-- ENCABEZADO / HERO -->
   <header>
-    <h1>Hola, somos <span>MBR</span></h1>
-    <p>Creo que la brevedad es crucial. Mis diseños digitales e impresos se basan en el minimalismo y la elegancia.</p>
-    <a class="boton" href="#contacto">Contrátame</a>
+    <h1>Hola, somos MBR</h1>
+    <p>
+      Creo que la brevedad es crucial. Mis diseños digitales e impresos se basan en el minimalismo y la elegancia.
+      <br>
+      Desplázate para conocer nuestras propuestas.
+    </p>
+    <!-- Puedes enlazar el botón a la sección ofertas -->
+    <a class="boton" href="#ofertas">Ver Ofertas</a>
   </header>
 
-  <!-- Galería de imágenes o sección de proyectos -->
-  <section id="galeria">
-    <h2>Mis Proyectos</h2>
-    <div class="grid">
-      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+1" alt="Proyecto 1">
-      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+2" alt="Proyecto 2">
-      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+3" alt="Proyecto 3">
-      <img src="https://via.placeholder.com/800x600/dbc6b3/ffffff?text=Proyecto+4" alt="Proyecto 4">
-    </div>
-  </section>
+  <!-- SECCIÓN “LO QUE OFRECEMOS” -->
+  <section class="section-ofertas" id="ofertas">
+    <h2>Lo que ofrecemos</h2>
+    <p>Explora nuestras principales propuestas de aventura, bienestar y desconexión.</p>
 
-  <!-- Sección Contacto -->
-  <section id="contacto">
-    <h2>¿Listo para trabajar juntos?</h2>
-    <p>Ponte en contacto y platiquemos sobre tu proyecto.</p>
-    <a class="contacto-boton" href="mailto:tu_correo@ejemplo.com">Escríbeme</a>
-  </section>
-
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 MBR - Todos los derechos reservados.</p>
-  </footer>
-
-</body>
-</html>
+    <div class="servicios">
+      <!-- Buceo -->
+      <div class="servicio">
+        <div class="imagen-arco">
+          <img src="https://via.placeholder.com/400x400/dbc6b3/ffffff?text=Buceo" alt="Imagen de Buceo">
+        </div>
